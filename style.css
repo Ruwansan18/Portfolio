@@ -1,0 +1,146 @@
+body {
+  font-family: 'times new romance';
+  margin: 0;
+  background: #f4f4f4;
+  color: black;
+}
+
+.side-nav {
+  width: 150px;
+  background-color: #112240;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+}
+
+.side-nav ul li a:hover {
+  background-color: #64ffda;
+  color: #112240;
+  border-radius: 6px;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-nav ul li {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.side-nav ul li a {
+  color: #64ffda;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.main-header {
+  margin-left: 160px;
+  padding: 10px 10px 10px 10px; 
+  background-color: #0a192f;
+  color: white;
+}
+
+.main-name {
+  font-size: 100px;     
+  font-weight: bold;    
+  margin-bottom: 10px;  
+
+}
+
+.top-line {
+  height: 3px;
+  background: repeating-linear-gradient(90deg, yellow, yellow 10px, black 10px, black 20px);
+  margin-bottom: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.profile-img-small {
+  width: 250px;
+  height: 300px;
+  border-radius: 1%;
+  object-fit: cover;
+  border: 3px solid #64ffda;
+}
+
+.skills-section {
+  margin-left: 160px;
+  padding: 60px 20px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skill-card {
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.skill-card {
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.skill-card i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+
+.skill-card[data-skill="html"]:hover {
+  background-color: #e34c26;
+  color: white;
+}
+.skill-card[data-skill="css"]:hover {
+  background-color: #2965f1;
+  color: white;
+}
+.skill-card[data-skill="js"]:hover {
+  background-color: #f0db4f;
+  color: black;
+}
+.skill-card[data-skill="network"]:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+.skill-card[data-skill="security"]:hover {
+  background-color: #673ab7;
+  color: white;
+}
+.skill-card[data-skill="mobile"]:hover {
+  background-color: #009688;
+  color: white;
+}
+
+
